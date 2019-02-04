@@ -10,6 +10,7 @@
     <Set>
         <Headers>
           <Header name='content-type'>text/xml</Header>
+          <Header name='test'>text/xml</Header>
       </Headers>
         <QueryParams/>
         <FormParams/>
