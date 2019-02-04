@@ -25,10 +25,12 @@ git push origin $SCM_FEATURE_NAME
 #git fetch develop
 
 #git merge develop develop doesnt exist on local
-#git checkout -t -b develop origin/develop
+git checkout -b develop
+git pull origin develop --allow-unrelated-histories
+#git checkout -t -b develop origin/develop 
 #git checkout develop
-#git merge --no-ff $SCM_FEATURE_NAME
-#git push -u origin develop
+git merge --no-ff $SCM_FEATURE_NAME
+git push -u origin develop
 
 #git fetch origin develop
 #git merge develop
