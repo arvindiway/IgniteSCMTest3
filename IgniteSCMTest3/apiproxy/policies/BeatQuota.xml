@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Quota async="false" continueOnError="false" enabled="true" name="BeatQuota" type="rollingwindow">
+    <DisplayName>BeatQuota</DisplayName>
+    <Properties/>
+    <Distributed>true</Distributed>
+    <Synchronous>true</Synchronous>
+    <Allow count="20000" countRef="request.header.quota_allowed"/>
+    <Interval ref="request.header.quota_count">1</Interval>
+    <TimeUnit ref="request.header.quota_timeout">minute</TimeUnit>
+</Quota>

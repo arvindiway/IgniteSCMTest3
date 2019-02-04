@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="3" name="heartbeat-api-proxy">
+    <Basepaths>/v1/heartbeat</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1548203862329</CreatedAt>
+    <CreatedBy>arvind.x.velumani@kp.org</CreatedBy>
+    <Description></Description>
+    <DisplayName>heartbeat</DisplayName>
+    <LastModifiedAt>1548203862329</LastModifiedAt>
+    <LastModifiedBy>arvind.x.velumani@kp.org</LastModifiedBy>
+    <Policies>
+        <Policy>BeatQuota</Policy>
+        <Policy>Status-200</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>
