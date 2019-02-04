@@ -13,7 +13,7 @@ git add .
 git commit -a -m  "$SCM_COMMIT_NAME"
 # to add new remote repo git remote add origin https://arvindiway:bd2c4ccdf3379733d90586216ebdf3bc5c32c627@github.com/arvindiway/ignite-scm-test-1.git/
 git remote add origin https://arvindiway@github.com/arvindiway/IgniteSCMTest3.git/
-git push $SCM_FEATURE_NAME
+git push origin $SCM_FEATURE_NAME
 
 #git merge develop
 #git checkout develop
