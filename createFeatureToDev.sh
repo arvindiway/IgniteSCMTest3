@@ -9,6 +9,7 @@ cd ${LOCAL_REPO_DIR}
 git init .
 # add changes
 git add .
+git remote add origin https://arvindiway@github.com/arvindiway/IgniteSCMTest4.git/
 #git merge develop develop doesnt exist on local
 echo create local develop
 git checkout -b develop
@@ -23,7 +24,7 @@ git merge develop
 
 git commit -a -m  "$SCM_COMMIT_NAME"
 # to add new remote repo git remote add origin https://arvindiway:bd2c4ccdf3379733d90586216ebdf3bc5c32c627@github.com/arvindiway/ignite-scm-test-1.git/
-git remote add origin https://arvindiway@github.com/arvindiway/IgniteSCMTest4.git/
+
 git push origin $SCM_FEATURE_NAME
 
 echo checkout develop
