@@ -1,11 +1,11 @@
 #!/bin/sh
-REPO="/Users/arvindvelumani/Feature3"
+LOCAL_REPO_DIR="/Users/arvindvelumani/Feature4"
 SID="S231"
 DATE_WITH_TIME=$(date "+%Y.%m.%d-%H.%M.%S")
 
 SCM_COMMIT_NAME="test commit"
 SCM_FEATURE_NAME="feature_"$SID"_"$DATE_WITH_TIME
-cd ${REPO}
+cd ${LOCAL_REPO_DIR}
 git init .
 # add changes
 git add .
@@ -23,7 +23,7 @@ git merge develop
 
 git commit -a -m  "$SCM_COMMIT_NAME"
 # to add new remote repo git remote add origin https://arvindiway:bd2c4ccdf3379733d90586216ebdf3bc5c32c627@github.com/arvindiway/ignite-scm-test-1.git/
-git remote add origin https://arvindiway@github.com/arvindiway/IgniteSCMTest3.git/
+git remote add origin https://arvindiway@github.com/arvindiway/IgniteSCMTest4.git/
 git push origin $SCM_FEATURE_NAME
 
 echo checkout develop
