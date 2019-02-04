@@ -29,7 +29,8 @@ git checkout -b develop
 git pull origin develop --allow-unrelated-histories
 #git checkout -t -b develop origin/develop 
 #git checkout develop
-git merge --no-ff $SCM_FEATURE_NAME
+git merge --no-ff $SCM_FEATURE_NAME --allow-unrelated-histories -Xignore-all-space -Xtheirs -m "$SCM_COMMIT_NAME"
+git pull origin develop --allow-unrelated-histories
 git push -u origin develop
 
 #git fetch origin develop
